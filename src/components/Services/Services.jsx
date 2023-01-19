@@ -14,9 +14,9 @@ const Services = () => {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              Web <br /> Development
             </h3>
           </div>
 
@@ -37,10 +37,10 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
               <h3 className="services__modal-title">
-                Product <br /> Designer
+                Web <br /> Development
               </h3>
               <p className="services__modal-description">
-                Service with more than 3 years of experience.Providing quality
+                Service with more than 1 years of experience.Providing quality
                 work to clients and companies.
               </p>
               <ul className="services__modal-services grid">
@@ -66,21 +66,15 @@ const Services = () => {
                     I position your company brand.
                   </p>
                 </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    Make attractive logo and posters.
-                  </p>
-                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="services__content">
           <div>
-            <i className="uil uil-web-grid services__icon"></i>
+            <i className="uil uil-image-resize-landscape services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              Graphic <br /> Designing
             </h3>
           </div>
 
@@ -101,40 +95,32 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
               <h3 className="services__modal-title">
-                Product <br /> Designer
+                Graphic <br /> Designing
               </h3>
               <p className="services__modal-description">
-                Service with more than 3 years of experience.Providing quality
+                Service with more than 1 years of experience.Providing quality
                 work to clients and companies.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I build the user interface.
-                  </p>
+                  <p className="services__modal-info">Logos.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
+                  <p className="services__modal-info">Posters.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create a backend with sanity and firebase.
-                  </p>
+                  <p className="services__modal-info">Book Covers.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I position your company brand.
-                  </p>
+                  <p className="services__modal-info">Business Cards.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    Make attractive logo and posters.
-                  </p>
+                  <p className="services__modal-info">Website layouts.</p>
                 </li>
               </ul>
             </div>
@@ -144,7 +130,7 @@ const Services = () => {
           <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              UI/UX <br /> Designing
             </h3>
           </div>
 
@@ -165,10 +151,10 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
               <h3 className="services__modal-title">
-                Product <br /> Designer
+                UI/UX <br /> Designing
               </h3>
               <p className="services__modal-description">
-                Service with more than 3 years of experience.Providing quality
+                Service with more than 1 years of experience.Providing quality
                 work to clients and companies.
               </p>
               <ul className="services__modal-services grid">
@@ -180,13 +166,11 @@ const Services = () => {
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
+                  <p className="services__modal-info">Web page layouts.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create a backend with sanity and firebase.
-                  </p>
+                  <p className="services__modal-info">Web page designs.</p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
@@ -194,12 +178,12 @@ const Services = () => {
                     I position your company brand.
                   </p>
                 </li>
-                <li className="services__modal-service">
+                {/* <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
                     Make attractive logo and posters.
                   </p>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
