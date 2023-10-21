@@ -1,29 +1,41 @@
 import React from "react";
+import {motion} from "framer-motion"
+import linkedin from "../../assets/Skills/link.png"
+import github from "../../assets/Skills/github.png"
 
 export const Social = () => {
   return (
-    <div className="home__social">
+    <motion.div 
+      initial={{
+        x: -500,
+        opacity:0,
+        scale: 0.5
+      }}
+      animate={{
+        x: 0,
+        opacity: 1,
+        scale: 1
+      }}
+      transition={{
+        duration:1.5
+      }}
+    className="home__social">
       <a
         href="https://github.com/Asad1024"
+        rel="noreferrer"
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-github-alt"></i>
+        <img src={github} width={37} className="github" alt="" />
       </a>
       <a
-        href="https://www.instagram.com/asad.ali.sh/"
+        href="https://www.linkedin.com/in/asad-shah-42604b1a5/"
+        rel="noreferrer"
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-instagram-alt"></i>
+        <img src={linkedin} width={37} className="linkedin" alt="" />
       </a>
-      <a
-        href="https://twitter.com/asad_ali_sh"
-        className="home__social-icon"
-        target="_blank"
-      >
-        <i class="uil uil-twitter-alt"></i>
-      </a>
-    </div>
+    </motion.div>
   );
 };

@@ -14,7 +14,6 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
-
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -156,8 +155,18 @@ img {
   font-weight: var(--font-medium);
 }
 
+.dark-theme .button{
+  background-color: black;
+  color: #fff;
+}
+
 .button:hover {
   background-color: var(--title-color-dark);
+}
+
+.dark-theme .button:hover {
+  background-color: #1e1e1e;
+  color: #fff;
 }
 
 .button__icon {

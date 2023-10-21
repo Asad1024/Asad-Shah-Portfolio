@@ -1,3 +1,13 @@
+.dark-theme {
+  --body-color: #313131; /* Background color for dark theme */
+  --title-color: #ffffff; /* Text color for dark theme */
+  --title-color-dark: #ffffff; /* Text color for dark theme when active or on hover */
+}
+
+.skills {
+  background-color: var(--body-color);
+}
+
 .skills__container {
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
@@ -7,8 +17,13 @@
 .skills__content {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   border-radius: 1.25rem;
+}
+
+.dark-theme .skills__content{
+  background-color: #313131;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .skills__title {
@@ -32,6 +47,7 @@
 
 .skills__data {
   display: flex;
+  align-items: center;
   column-gap: 0.5rem;
 }
 

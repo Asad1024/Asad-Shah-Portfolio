@@ -3,7 +3,7 @@ import React from "react";
 const ScrollDown = () => {
   return (
     <div className="home__scroll">
-      <a href="" className="home__scroll-button button--flex">
+      <a href="#footer" className="home__scroll-button button--flex">
         <svg
           width="32px"
           height="32px"
@@ -39,7 +39,7 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <span className="home__scroll-name">Scroll Down</span>
+        <span className="home__scroll-name">Scroll <span style={{ color:"#F7AB05"}}>Down</span></span>
         <i class="uil uil-arrow-down home__scroll-arrow"></i>
       </a>
     </div>

@@ -1,5 +1,22 @@
+.dark-theme {
+  --body-color: #313131; /* Background color for dark theme */
+  --title-color: #ffffff; /* Text color for dark theme */
+  --title-color-dark: #ffffff; /* Text color for dark theme when active or on hover */
+}
+
+.home{
+  background-color: var(--body-color);
+}
+
+/* Dark mode style for the SVG */
+.dark-theme .button__icon {
+  fill: var(--title-color); /* Change the fill color to match the title color */
+}
+
 .home__container {
   row-gap: 7rem;
+  position: relative;
+  top: 30px;
 }
 
 .home__content {
@@ -12,7 +29,8 @@
 .home__social {
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rem;
+  row-gap: 1.7rem;
+  align-items: center;
 }
 
 .home__social-icon {
@@ -38,9 +56,9 @@
 
 .home__subtitle {
   position: relative;
-  font-size: var(--h3-font-size);
+  font-size: 1.3rem;
+  font-weight: bold;
   padding-left: 5.4rem;
-  font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
 }
 
@@ -49,18 +67,22 @@
   margin-bottom: var(--mb-3);
 }
 
+.dark-theme .home__description {
+  color: var(--title-color);
+}
+
 .home__subtitle::before {
   position: absolute;
   content: "";
   width: 70px;
-  height: 1px;
+  height: 2px;
   background-color: var(--text-color);
-  top: 1rem;
+  top: 15px;
   left: 0;
 }
 
 .home__img {
-  background-image: url(../../assets//profile1.jpg);
+  background-image: url(../../assets/Profile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,6 +94,16 @@
   animation: profile__animation 6s ease-in-out infinite 1s;
   margin-top: 3rem;
 }
+
+
+.letter-spacing::before {
+  content: " ";
+}
+
+.letter-spacing::after {
+  content: " ";
+}
+
 
 @keyframes profile__animation {
   0% {
@@ -87,6 +119,8 @@
 
 .home__scroll {
   margin-left: 9.25rem;
+  position: relative;
+  bottom: 10px;
 }
 
 .wheel {
@@ -114,6 +148,15 @@
   color: var(--title-color);
 }
 
+.github, .linkedin {
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.github:hover, .linkedin:hover {
+  transform: scale(1.4);
+}
+
+
 @media screen and (max-width: 992px) {
   .home__content {
     grid-template-columns: 100px repeat(2, 1fr);
@@ -132,7 +175,7 @@
 
   .home__subtitle::before {
     width: 42px;
-    top: 0.8rem;
+    top: 1rem;
   }
 
   .home__description {
@@ -168,10 +211,26 @@
     width: 200px;
     height: 200px;
     box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    position: relative;
+    right: 35px;
   }
   .home__scroll {
     display: none;
   }
+
+  .home__social{
+      position: relative;
+      bottom: 180px;
+      display: flex;
+      gap: 20px;
+      width: 80px;
+  }
+
+  .home__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  
 }
 
 /* For small devices */

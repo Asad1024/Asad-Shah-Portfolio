@@ -1,8 +1,18 @@
+.dark-theme {
+  --body-color: #313131; /* Background color for dark theme */
+  --title-color: #ffffff; /* Text color for dark theme */
+  --title-color-dark: #ffffff; /* Text color for dark theme when active or on hover */
+}
+
+.contact {
+  background-color: var(--body-color);
+}
+
 .contact__container {
-  grid-template-columns: repeat(2, max-content);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  column-gap: 6rem;
-  padding-bottom: 3rem;
+  flex-direction: column;
 }
 
 .contact__title {
@@ -10,6 +20,11 @@
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+}
+
+.dark-theme .contact__card-title,
+.dark-theme .contact__card-icon {
+  color: #fff;
 }
 
 .contact__info {
@@ -30,6 +45,11 @@
   text-align: center;
 }
 
+.dark-theme .contact__card {
+  background-color: #313131;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .contact__card-icon {
   font-size: 2rem;
   color: var(--title-color);
@@ -38,6 +58,13 @@
 .contact__card-title,
 .contact__card-data {
   font-size: var(--small-font-size);
+}
+
+.dark-theme .contact__card-title,
+.dark-theme .contact__card-data,
+.dark-theme .contact__button,
+.dark-theme .contact__button-icon {
+  color: #fff;
 }
 
 .contact__card-title {

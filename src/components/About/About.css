@@ -1,3 +1,13 @@
+.dark-theme {
+  --body-color: #313131; /* Background color for dark theme */
+  --title-color: #ffffff; /* Text color for dark theme */
+  --title-color-dark: #ffffff; /* Text color for dark theme when active or on hover */
+}
+
+.about {
+  background-color: var(--body-color);
+}
+
 .about__container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -24,6 +34,11 @@
   padding: 1rem 1.25rem;
 }
 
+.dark-theme .about__box {
+  background-color: #2b2a2a;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .about__icon {
   font-size: 1.5rem;
   color: var(--title-color);
@@ -39,9 +54,21 @@
   font-size: var(--tiny-font-size);
 }
 
+.dark-theme .about__subtitle {
+  color: #ffffff;
+}
+
+.dark-theme .section__subtitle {
+  color: #ffffff;
+}
+
 .about__description {
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
+}
+
+.dark-theme .about__description {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 992px) {

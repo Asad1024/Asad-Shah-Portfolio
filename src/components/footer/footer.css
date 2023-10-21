@@ -1,3 +1,9 @@
+.dark-theme {
+  --container-color: #313131; /* Background color for dark theme */
+  --title-color: #ffffff; /* Text color for dark theme */
+  --title-color-dark: #ffffff; /* Text color for dark theme when active or on hover */
+}
+
 .footer {
   background-color: var(--container-color);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -5,6 +11,9 @@
 
 .footer__container {
   padding: 2rem 0 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer__title,
@@ -43,8 +52,17 @@
   display: inline-flex;
 }
 
+.dark-theme .footer__social-link {
+  background-color: #212121;
+  color: #ffffff;
+}
+
 .footer__social-link:hover {
   background-color: var(--title-color-dark);
+}
+
+.dark-theme .footer__social-link:hover {
+  background-color: #000;
 }
 
 .footer__copy {

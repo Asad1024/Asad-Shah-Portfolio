@@ -1,11 +1,22 @@
 import React from "react";
 import "./footer.css";
+import { useDarkMode } from "../../context/DarkModeContext";
+import dev from "../../assets/dev.png";
 
 const Footer = () => {
+  const { darkMode } = useDarkMode();
   return (
-    <footer className="footer">
+    <footer
+      className={`footer section ${darkMode ? "dark-theme" : ""}`}
+      id="footer"
+    >
       <div className="footer__container container">
-        <h1 className="footer__title">Asad</h1>
+        <a href="#home">
+          <h1 className="footer__title" style={{ color: "#F7AB04" }}>
+            Asad
+          </h1>
+          <img src={dev} style={{ marginBottom: "35px" }} alt="" />
+        </a>
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
@@ -18,37 +29,32 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#testimonials" className="footer__link">
-              Testimonials
+            <a href="#projects" className="footer__link">
+              Projects
             </a>
           </li>
         </ul>
 
         <div className="footer__social">
           <a
-            href="https://www.facebook.com/profile.php?id=100017577317137"
+            href="https://github.com/Asad1024"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-github"></i>
           </a>
           <a
-            href="https://www.instagram.com/asad.ali.sh/"
+            href="https://www.linkedin.com/in/asad-shah-42604b1a5/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a
-            href="https://twitter.com/asad_ali_sh"
-            className="footer__social-link"
-            target="_blank"
-          >
-            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-linkedin"></i>
           </a>
         </div>
         <span className="footer__copy">
-          &#169; Crypticalcoder. All rigths reserved
+          &#169; Copyright. All rigths reserved
         </span>
       </div>
     </footer>
